@@ -2,6 +2,7 @@ import java.io.*;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class MyMap 
 { 
@@ -12,6 +13,11 @@ public class MyMap
         this.arrayDeArquivos = new String[] {"hamlet.txt","kinglear.txt","macbeth.txt","othello.txt","romeoandjuliet.txt"};
     }
     
+    public MyMap(String[] palavras)
+    {
+        this.documentos = new ArrayList<String>();
+        this.arrayDeArquivos = palavras;
+    }
     // tratamento e padronização das palavras 
     public String tratamento(String palavra)
     {   
@@ -61,6 +67,7 @@ public class MyMap
         }
         else
         {
+            Collections.sort(documentos); // coloca os elementos da lista em ordem alfabética
             for (int i=0; i<documentos.size(); i++)
             {
                 System.out.printf(" %s\n", documentos.get(i));
