@@ -4,3 +4,5 @@ Trabalho Prático - João Victor Silva (2015046652) e Lucas Rodrigues(2015015811
 Desenvolvimento de um motor de busca em arquivos.
 
 Linguagem utilizada: Java
+
+Trabalho da disciplina Programação e Desenvolvimento de Software II
